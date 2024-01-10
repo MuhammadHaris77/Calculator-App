@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Calculator App</title>
+</head>
+
+<body>
+
+    <div class="container-fluid main-container">
+
+        <div class="container ">
+            <br>
+            <h3 onclick="wellcome()">
+                CALCULATOR APP
+            </h3>
+            <br>
+
+        </div>
+        <div class=" calculator-body">
+
+
+            <div class="div-input">
+                <input type="text" size="1000" id="getValue" class="get-input">
+
+            </div>
+
+
+            <div class="btn-container">
+                <div class="">
+                    <input type="button" onclick="cal(1)" class="btn btn-dark" value="1">
+                    <input type="button" onclick="cal(2)" class="btn btn-dark" value="2">
+                    <input type="button" onclick="cal(3)" class="btn btn-dark" value="3">
+                    <input type="button" onclick="cal('+')" class="btn btn-light" value="+">
+
+                </div>
+
+                <div>
+                    <input type="button" onclick="cal(4)" class="btn btn-dark" value="4">
+                    <input type="button" onclick="cal(5)" class="btn btn-dark" value="5">
+                    <input type="button" onclick="cal(6)" class="btn btn-dark" value="6">
+                    <input type="button" onclick="cal('-')" class="btn btn-light" value="-" >
+
+                </div>
+
+                <div>
+                    <input type="button" onclick="cal(7)" class="btn btn-dark" value="7" >
+                    <input type="button" onclick="cal(8)" class="btn btn-dark" value="8" >
+                    <input type="button" onclick="cal(9)" class="btn btn-dark" value="9" >
+                    <input type="button" onclick="cal('*')" class="btn btn-light" value="*" >
+
+                </div>
+
+
+                <div>
+
+                    <input type="button" onclick="cal('.')" class="btn btn-light" value="." >
+                    <input type="button" onclick="cal(0)" class="btn btn-dark" value="0"    >
+                    <input type="button" onclick="result()" class="btn btn-light" value="=" >
+                    <input type="button" onclick="cal('/')" class="btn btn-light" value="/" >
+
+                </div>
+
+                <input type="button" class="btn btn-warning" onclick="reset()" value="C">
+
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
